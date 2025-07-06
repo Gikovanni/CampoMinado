@@ -1,0 +1,24 @@
+.grid {
+  display: inline-block;
+  border: 2px solid #444;
+}
+
+.linha {
+  display: flex;
+}
+
+.celula {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  border: 1px solid #999;
+  background-color: #ddd;
+  cursor: pointer;
+  user-select: none;
+}
+
+.celula:hover {
+  background-color: #ccc;
+}
