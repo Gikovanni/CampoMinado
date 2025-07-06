@@ -1,0 +1,10 @@
+<div class="grid">
+  <div *ngFor="let row of board; let i = index" class="linha">
+    <div *ngFor="let cell of row; let j = index"
+         class="celula"
+         (click)="onClick(i, j)"
+         (contextmenu)="onRightClick(i, j); $event.preventDefault()">
+      {{ cell.revealed ? (cell.hasMine ? '💣' : cell.near || '') : (cell.marked ? '🚩' : '') }}
+    </div>
+  </div>
+</div>
